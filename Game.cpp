@@ -389,7 +389,7 @@ namespace Gaming {
         os << "Round " << game.__round << std::endl;
         for(int i = 0; i < (game.__width * game.__height); i++){
             if(game.__grid[i] == nullptr){
-                os << "[    ]";
+                os << "[     ]";
             }
             else{
                 os << "[" << *game.__grid[i] << "]";
@@ -399,10 +399,10 @@ namespace Gaming {
             }
         }
         if(game.__status == Game::NOT_STARTED){
-            os << "Status: " << "Not Started!" << std::endl;
+            os << "Status: " << "Not Started" << std::endl;
         }
         if(game.__status == Game::PLAYING){
-            os << "Status: " << "Playing.." << std::endl;
+            os << "Status: " << "Playing..." << std::endl;
         }
         if(game.__status == Game::OVER){
             os << "Status: " << "Over!" << std::endl;
